@@ -9,8 +9,7 @@ RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing \
 	winetricks \
 	winetricks-bash-completion \
 	bash && \
-	ln -s wine64 /usr/bin/wine && \
-	wine cmd
+	ln -s wine64 /usr/bin/wine
 
 WORKDIR /root/.wine/drive_c/users/root/
 
